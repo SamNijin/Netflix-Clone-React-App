@@ -1,0 +1,19 @@
+.row-post {
+    padding: 20px;
+}
+
+.img {
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 350px;
+}
+
+.img::-webkit-scrollbar {
+    display: none;
+}
+
+.img img {
+    margin-right: 10px;
+}
