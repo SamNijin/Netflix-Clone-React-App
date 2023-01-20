@@ -16,7 +16,7 @@ function RowPost() {
 
   return (
     <div className="row-post">
-      <h3>Title</h3>
+      <h3>Popular Movies</h3>
       <div className="img">
         {movie.map((movies) => {
           return (

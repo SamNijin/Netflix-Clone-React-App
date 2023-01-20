@@ -3,6 +3,7 @@
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
     position: relative;
 }
 
@@ -10,7 +11,7 @@
     position: relative;
     left: 1%;
     top: 30%;
-    width: 300px;
+    width: 50%;
 }
 
 .button {
@@ -25,9 +26,15 @@
 }
 
 .description {
-    width: 400px;
+    width: 100%;
     text-align: left;
     font-weight: 600;
+    overflow-y: scroll;
+    height: 106px;
+}
+
+.description::-webkit-scrollbar {
+    display: none;
 }
 
 .fade {
@@ -36,4 +43,34 @@
     position: absolute;
     width: 100%;
     bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .banner {
+        color: #ffff;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 40px;
+
+    }
+
+    .overlay-text {
+        position: relative;
+        left: 1%;
+        top: 30%;
+        width: 50%;
+        font-size: 60%;
+    }
+
+    .description {
+        font-size: 100%;
+    }
+
+    .button {
+        padding: .4rem .7rem;
+        margin: 1rem .6rem 1rem 0;
+    }
 }
