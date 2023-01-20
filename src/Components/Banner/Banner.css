@@ -4,6 +4,7 @@
     height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 .overlay-text {
@@ -33,6 +34,7 @@
 .fade {
     height: 7.8rem;
     background: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
-    position: relative;
-    top: 48%;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
