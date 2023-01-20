@@ -6,11 +6,15 @@ import RowPost from "./Components/RowPost/RowPost";
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      {/* <div style={"height :fit-content"}> */}
-      <Banner />
-      {/* </div> */}
-      <RowPost />
+      <div>
+        <NavBar />
+      </div>
+      <div>
+        <Banner />
+      </div>
+      <div>
+        <RowPost />
+      </div>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./Banner.css";
-import { API_KEY, base_URL, image_URL } from "../../Constants/API";
+import { API_KEY, image_URL } from "../../Constants/API";
 import axios from "../../axios";
+import "./Banner.css";
 
 function Banner() {
   useEffect(() => {
@@ -14,8 +14,6 @@ function Banner() {
           ]
         )
       );
-
-    // setImage(resp).catch((error) => alert(error));
   }, []);
 
   const [image, setImage] = useState("");
@@ -26,7 +24,7 @@ function Banner() {
       style={{ backgroundImage: `url(${image_URL + image.backdrop_path})` }}
     >
       <div className="overlay-text">
-        <h1>{image.name}</h1>
+        <h1>{image.title || image.name}</h1>
         <div className="overlay-buttons">
           <button className="button">Play</button>
           <button className="button">My List</button>
