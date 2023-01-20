@@ -7,7 +7,9 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+      {/* <div style={"height :fit-content"}> */}
       <Banner />
+      {/* </div> */}
       <RowPost />
     </div>
   );
