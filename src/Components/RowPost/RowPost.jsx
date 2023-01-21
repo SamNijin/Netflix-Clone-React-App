@@ -20,7 +20,7 @@ function RowPost() {
       <div className="img">
         {movie.map((movies) => {
           return (
-            <div>
+            <div className="row">
               <img src={image_URL + movies.backdrop_path} alt="card" />
               <p>{movies.title}</p>
             </div>
