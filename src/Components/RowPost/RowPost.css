@@ -16,20 +16,17 @@
 }
 
 .small-card {
-    /* margin-right: 20px; */
     min-height: 150px;
     width: 200px;
 }
 
 .big-card {
-    /* min-height: 300px; */
     height: 250px;
 }
 
 .row {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     gap: 7px;
     margin: 25px 20px 0 0;
@@ -64,7 +61,6 @@ p {
     }
 
     .img img {
-        /* margin-right: 30px; */
         min-height: 210px;
         width: 200px;
         border-radius: 15px;
@@ -72,11 +68,8 @@ p {
 
 
     .big-card {
-        /* min-height: 300px; */
-        /* height: 400px;
-        width: 600px; */
         min-height: 900px;
-        min-width: 250px;
+        min-width: 280px;
     }
 
     .big-title {
