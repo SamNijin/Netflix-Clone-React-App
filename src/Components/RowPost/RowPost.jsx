@@ -1,28 +1,33 @@
 import React, { useEffect, useState } from "react";
 import axios from "../../axios";
-import { image_URL, API_KEY } from "../../Constants/API";
+import { image_URL } from "../../Constants/API";
 import "./RowPost.css";
 
-function RowPost() {
+function RowPost(props) {
   useEffect(() => {
     axios
-      .get(
-        `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US`
-      )
-      .then((resp) => setMovie(resp.data.results));
-  }, []);
+      .get(props.url)
+      .then((resp) => setMovie(resp.data.results))
+      .catch((err) => console.log(err));
+  }, [props]);
 
   const [movie, setMovie] = useState([]);
 
   return (
     <div className="row-post">
-      <h3>Popular Movies</h3>
+      <h3>{props.title}</h3>
       <div className="img">
         {movie.map((movies) => {
           return (
-            <div>
-              <img src={image_URL + movies.backdrop_path} alt="card" />
-              <p>{movies.title}</p>
+            <div className="row">
+              <img
+                src={image_URL + movies.backdrop_path}
+                alt="card"
+                className={props.isBig ? `big-card` : `small-card`}
+              />
+              <p className={props.isBig && "big-title"}>
+                {movies.title || movies.name}
+              </p>
             </div>
           );
         })}
