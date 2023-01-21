@@ -39,7 +39,6 @@ function RowPost(props) {
                 alt="card"
                 className={props.isBig ? `big-card` : `small-card`}
               />
-              )
               <p className={props.isBig && "big-title"}>
                 {movies.title || movies.name}
               </p>
