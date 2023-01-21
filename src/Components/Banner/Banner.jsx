@@ -23,15 +23,18 @@ function Banner() {
       className="banner"
       style={{ backgroundImage: `url(${image_URL + image.backdrop_path})` }}
     >
+      <div className="fade-top"></div>
       <div className="overlay-text">
         <h1>{image.title || image.name}</h1>
         <div className="overlay-buttons">
           <button className="button">Play</button>
           <button className="button">My List</button>
         </div>
-        <div className="description">{image.overview}</div>
+        <div className="description">
+          {image ? image.overview.slice(0, 130) : ""}
+        </div>
       </div>
-      <div className="fade"></div>
+      <div className="fade-bottom"></div>
     </div>
   );
 }

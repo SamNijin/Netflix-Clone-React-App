@@ -1,11 +1,11 @@
 .row-post {
-    padding: 20px;
+    padding: 10px 20px;
     margin-top: 10px;
 }
 
 .img {
     display: flex;
-    padding: 20px;
+    padding: 0 20px;
     overflow-x: scroll;
     overflow-y: hidden;
     min-height: 200px;
@@ -21,7 +21,7 @@
 }
 
 .big-card {
-    height: 250px;
+    height: 470px;
 }
 
 .row {
@@ -46,6 +46,11 @@ p {
 
 @media only screen and (max-width: 600px) {
 
+    .row-post {
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+
     .row {
         gap: 20px;
         margin: 10px 50px 0 -20px;
@@ -54,22 +59,23 @@ p {
 
     .img {
         display: flex;
-        padding: 20px;
+        padding: 0 20px;
         overflow-x: scroll;
         overflow-y: hidden;
         height: max-content;
     }
 
     .img img {
-        min-height: 210px;
-        width: 200px;
+        /* min-height: 10px !important; */
         border-radius: 15px;
     }
 
 
     .big-card {
-        min-height: 900px;
-        min-width: 280px;
+        /* min-height: 300px;
+        min-width: 280px; */
+        height: 400px;
+        width: 250px;
     }
 
     .big-title {
