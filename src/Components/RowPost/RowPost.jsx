@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import axios from "../../axios";
 import { image_URL } from "../../Constants/API";
 import "./RowPost.css";
@@ -29,7 +31,10 @@ function RowPost(props) {
         {movie.map((movies) => {
           return (
             <div className="row">
-              <img
+              <LazyLoadImage
+                effect="blur"
+                delayTime={1000000000}
+                placeholderSrc={image_URL + movies.poster_path}
                 src={image_URL + movies.poster_path}
                 alt="card"
                 className={props.isBig ? `big-card` : `small-card`}
