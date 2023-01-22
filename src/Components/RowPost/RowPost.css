@@ -8,7 +8,7 @@
     padding: 0 20px;
     overflow-x: scroll;
     overflow-y: hidden;
-    min-height: 200px;
+    min-height: 220px;
 }
 
 .img::-webkit-scrollbar {
@@ -33,6 +33,9 @@
 
 .row:hover {
     transform: scale(1.1);
+    position: static;
+    margin-top: -5px;
+    padding-bottom: 5px;
 }
 
 .row {
@@ -41,6 +44,7 @@
     align-items: center;
     gap: 7px;
     margin: 25px 20px 0 0;
+    min-height: auto;
 }
 
 .big-title {
@@ -50,6 +54,7 @@
 
 p {
     max-width: 150px;
+    height: 50px;
     margin: 0;
     text-align: center;
     font-size: small;
