@@ -18,10 +18,21 @@
 .small-card {
     min-height: 150px;
     width: 200px;
+    cursor: pointer;
 }
 
 .big-card {
     height: 470px;
+    cursor: pointer;
+}
+
+.big-card:hover,
+.small-card:hover {
+    border-radius: 15%;
+}
+
+.row:hover {
+    transform: scale(1.1);
 }
 
 .row {
@@ -66,14 +77,11 @@ p {
     }
 
     .img img {
-        /* min-height: 10px !important; */
         border-radius: 15px;
     }
 
 
     .big-card {
-        /* min-height: 300px;
-        min-width: 280px; */
         height: 400px;
         width: 250px;
     }
