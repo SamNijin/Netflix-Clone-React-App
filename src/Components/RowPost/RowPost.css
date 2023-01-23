@@ -18,18 +18,11 @@
 .small-card {
     min-height: 150px;
     width: 200px;
-    cursor: pointer;
 }
 
 .big-card {
     height: 470px;
-    cursor: pointer;
 }
-
-/* .big-card:hover,
-.small-card:hover {
-    border-radius: 15%;
-} */
 
 .row:hover {
     transform: scale(1.1);
@@ -38,7 +31,7 @@
     padding-bottom: 5px;
     color: red;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 1.1rem;
 }
 
 .row {
@@ -48,6 +41,7 @@
     gap: 7px;
     margin: 25px 20px 0 0;
     min-height: auto;
+    cursor: pointer;
     transition: all 500ms ease-in-out;
 }
 
@@ -63,7 +57,7 @@ p {
     text-align: center;
     font-size: small;
     transition: all 200ms;
-    transition-delay: 500ms;
+    transition-delay: 100ms;
 }
 
 @media only screen and (max-width: 600px) {
