@@ -26,16 +26,19 @@
     cursor: pointer;
 }
 
-.big-card:hover,
+/* .big-card:hover,
 .small-card:hover {
     border-radius: 15%;
-}
+} */
 
 .row:hover {
     transform: scale(1.1);
     position: static;
-    margin-top: -5px;
+    margin-top: -3px;
     padding-bottom: 5px;
+    color: red;
+    font-weight: 900;
+    font-size: 2rem;
 }
 
 .row {
@@ -45,6 +48,7 @@
     gap: 7px;
     margin: 25px 20px 0 0;
     min-height: auto;
+    transition: all 500ms ease-in-out;
 }
 
 .big-title {
@@ -58,6 +62,8 @@ p {
     margin: 0;
     text-align: center;
     font-size: small;
+    transition: all 200ms;
+    transition-delay: 500ms;
 }
 
 @media only screen and (max-width: 600px) {
